@@ -16,6 +16,7 @@ from app.services.schedule_plan import SchedulePlanService
 from app.services.exception_rule import ExceptionRuleService
 from app.services.retry_policy import RetryPolicyService
 from app.services.capture_batch import CaptureBatchService
+from app.services.node_gap import NodeGapService
 from app.services.field_mapping import FieldMappingService
 from app.services.data_landing import DataLandingService
 from app.services.audit_trail import AuditTrailService
@@ -40,6 +41,7 @@ SERVICES: dict[str, BaseModuleService] = {
     "exception_rule": ExceptionRuleService(),
     "retry_policy": RetryPolicyService(),
     "capture_batch": CaptureBatchService(),
+    "node_gap": NodeGapService(),
     "field_mapping": FieldMappingService(),
     "data_landing": DataLandingService(),
     "audit_trail": AuditTrailService(),
